@@ -1,0 +1,79 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  margin: 20px auto;
+}
+.survey__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  margin: 20px auto;
+}
+
+.survey__input {
+  margin-left: 10px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 180px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.item__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item__text::before {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  content: "";
+}
+
+.item:nth-child(1) .item__text::before {
+  background-image: url(./image/man.svg);
+}
+
+.item:nth-child(2) .item__text::before {
+  background-image: url(./image/bike.svg);
+}
+
+.item:nth-child(3) .item__text::before {
+  background-image: url(./image/car.svg);
+}
+
+.item:nth-child(4) .item__text::before {
+  background-image: url(./image/plane.svg);
+}
+
+.item__result {
+    text-align: center;
+} 
